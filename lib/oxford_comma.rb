@@ -3,6 +3,6 @@ def oxford_comma(array)
     return array
   end
 
-  array.last = "and #{array.last}"
+  array[array.size - 1] = "and #{array.last}"
   return array.join(", ")
 end
